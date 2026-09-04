@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">
+                My Learning Profile
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card text-center shadow">
+
+                        <div class="card-body p-4">
+
+
+                            <div class="fs-1 mb-3">
+                                👤
+                            </div>
+
+                            <h4 class="fw-bold">
+                                Yasmin Toyeb
+                            </h4>
+
+                            <p class="text-muted">
+                                Web Development
+                            </p>
+
+                            <div class="mb-4">
+
+                                <span class="badge bg-primary">
+                                    HTML
+                                </span>
+
+                                <span class="badge bg-primary">
+                                    CSS
+                                </span>
+
+                                <span class="badge bg-primary">
+                                    Bootstrap
+                                </span>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary me-2">
+                                Message
+                            </button>
+
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProfile">
+                                Edit Profile
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="modal fade" id="editProfile" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Learning Profile</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" value="Yasmin Toyeb">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" value="yasmin@gmail.com">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">Favorite Course</label>
+
+                        <select class="form-select">
+                            <option selected>Web Development</option>
+                            <option>Python Programming</option>
+                            <option>UI/UX Design</option>
+                            <option>Database</option>
+                        </select>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">Bio</label>
+
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+
+
+                    <button type="button" class="btn btn-primary">
+                        Save Changes
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
