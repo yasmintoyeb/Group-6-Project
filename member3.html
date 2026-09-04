@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Progress</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>Student Progress</h1>
+
+			<table>
+				<caption>Current student progress</caption>
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Student</th>
+						<th scope="col">Course</th>
+						<th scope="col">Progress</th>
+						<th scope="col">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Dara</td>
+						<td>Web Dev</td>
+						<td><progress value="85" max="100">85%</progress> 85%</td>
+						<td>Active</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Sopha</td>
+						<td>Python</td>
+						<td><progress value="60" max="100">60%</progress> 60%</td>
+						<td>Pending</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Vanna</td>
+						<td>UI/UX</td>
+						<td><progress value="30" max="100">30%</progress> 30%</td>
+						<td>Blocked</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<nav aria-label="Student progress pages">
+				<a href="#">Previous</a>
+				<a href="#" aria-current="page">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">Next</a>
+			</nav>
+		</section>
+
+		<section>
+			<h2>Choose Your Plan</h2>
+
+			<article>
+				<h3>Basic</h3>
+				<p><strong>$5</strong></p>
+				<button type="button">Choose</button>
+			</article>
+
+			<article>
+				<h3>Pro <span aria-label="popular plan">&#11088;</span></h3>
+				<p><strong>$10</strong></p>
+				<button type="button">Choose</button>
+			</article>
+
+			<article>
+				<h3>Enterprise</h3>
+				<p><strong>$20</strong></p>
+				<button type="button">Choose</button>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
